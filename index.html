@@ -1,69 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Retro Surface Effect</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MT7MNXHD');</script>
+  <!-- End Google Tag Manager -->
 
-    body {
-      min-height: 100vh;
-      background: url('your-image.jpg') no-repeat center center / cover;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      overflow: hidden;
-      position: relative;
-    }
-
-    /* Стилізація сітки */
-    .grid {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 50%; /* Займає нижню половину екрану */
-      background: linear-gradient(
-        rgba(255, 255, 255, 0.2) 0%, 
-        rgba(255, 255, 255, 0) 100%
-      );
-      mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-      -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-      overflow: hidden;
-    }
-
-    .grid::before {
-      content: '';
-      position: absolute;
-      width: 200%;
-      height: 200%;
-      top: 0;
-      left: 0;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1%, rgba(0, 0, 0, 0) 60%);
-      transform: translate(-50%, -50%);
-      opacity: 0.7;
-    }
-
-    /* Сітка ліній */
-    .grid .lines {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-                        linear-gradient(to top, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-      background-size: 40px 40px;
-      opacity: 0.7;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volo Lebid</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Сітка -->
-  <div class="grid">
-    <div class="lines"></div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MT7MNXHD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="breadcrumbs">
+    <a href="https://drive.google.com/file/d/16VSnagdR5v8T6pSSuuNc5H89XmbdBRWN/view?usp=drive_link">Product</a> /
+    <a href="https://drive.google.com/file/d/16VSnagdR5v8T6pSSuuNc5H89XmbdBRWN/view?usp=drive_link">Data Science</a> /
+    <a href="https://drive.google.com/file/d/16VSnagdR5v8T6pSSuuNc5H89XmbdBRWN/view?usp=drive_link">Marketing</a> /
+    <a href="https://drive.google.com/file/d/16VSnagdR5v8T6pSSuuNc5H89XmbdBRWN/view?usp=drive_link">User Acquisition</a> /
+    <a href="https://drive.google.com/file/d/16VSnagdR5v8T6pSSuuNc5H89XmbdBRWN/view?usp=drive_link">Creative</a> /
+    <a href="https://drive.google.com/file/d/16VSnagdR5v8T6pSSuuNc5H89XmbdBRWN/view?usp=drive_link">Content</a>
+  </div>
+
+  <div id="container" class="container">
+    <h1>Volo Lebid</h1>
+    <p class="description">
+      Versatile marketer with success cases in Performance, Media and Mobile
+    </p>
+    <!-- Монети з боків кнопки -->
+    <div class="button-container">
+      <img src="coinn.gif" alt="Coin Left" class="coin coin-left">
+      <a 
+        class="portfolio-button" 
+        href="https://drive.google.com/file/d/16VSnagdR5v8T6pSSuuNc5H89XmbdBRWN/view?usp=drive_link"
+      >
+        See Portfolio
+      </a>
+      <img src="coinn.gif" alt="Coin Right" class="coin coin-right">
+    </div>
+    <a 
+      class="transparent-button" 
+      href="https://lovelyswans.github.io/qanda/"
+    >
+      Suggest Opportunity
+    </a>
+  </div>
+
+  <div class="social-section">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/volo42/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.instagram.com/accidentalsweet/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+    </div>
+    <a 
+      class="cv-link" 
+      href="https://drive.google.com/file/d/1zu8m_E2aVNNf5q_pHgPO1Io4H5fBtUhC/view?usp=drive_link"
+    >
+      1 Page CV
+    </a>
   </div>
 </body>
 </html>
